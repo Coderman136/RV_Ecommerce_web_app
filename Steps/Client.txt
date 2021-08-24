@@ -1,0 +1,8 @@
+1) npx create-react-app . : . for to have in the same folder
+2) We created a .gitignore in root folder, so by (1), we get a .gitignore in client, so we copy thr contents from clients 
+.gitignore to root folder .gitignore and change /node_modules to node_modules
+                                                                 node_modules/
+3)rm -rf .git to remove the git repository in client
+4) git init in root folder to create git repository
+5) npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension
+6) <i className=""></i> :cdnjs.com 

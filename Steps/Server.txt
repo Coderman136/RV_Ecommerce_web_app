@@ -1,0 +1,5 @@
+Main folder: 1) npm init -y : default package.json, then change main in package.json from index.js to server.js
+             2)npm i express mongoose dotenv
+               -> dotenv for mongo uri
+             3)installing devdependency named 'concurrently' : which starts both backend and frontend at the same time.
+               npm i --save-dev nodemon concurrently
