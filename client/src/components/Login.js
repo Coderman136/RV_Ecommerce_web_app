@@ -6,7 +6,7 @@ import './Login.css'
 
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
-// import login from '../login.jpg'
+import login from './login.jpg'
 
 
 export default function Login({ onIdSubmit}) {
@@ -27,12 +27,12 @@ export default function Login({ onIdSubmit}) {
  
 
  return (
-  <Container className = " d-flex align-items-center " style={{ border: '3px solid red',width: '50%', height: '100px', borderRadius: '10px', padding:'10px'}}>
-   <Form onSubmit={handleSubmit} className="w-100   p-5 rounded-3 " >
+  <Container className = "align-items-center d-flex p-5 " style={{ padding: '20px',height: '100vh', width: '70vh', margin:'300px 200px 300px 450px'}}>
+   <Form onSubmit={handleSubmit} className="w-100   p-5 rounded-3 " style={{borderRadius: '15px',background:`url(${login})`, padding: '20px'}}>
     <Form.Group>
      
 
-     <PhoneInput
+     <PhoneInput style={{ padding: '20px'}}
       placeholder={ value ? (isValidPhoneNumber(value) ? undefined : "Enter Valid Phone Number") : 'Enter Phone Number' }
       defaultCountry='CA'
       className="form-control"
@@ -43,7 +43,7 @@ export default function Login({ onIdSubmit}) {
 
     </Form.Group>
     
-    <Button type="submit" className="m-5 ">LOGIN</Button>
+    <Button style={{ padding: '5px', borderRadius: '5px'}} type="submit" className="m-5 ">LOGIN</Button>
     
    </Form>
    
